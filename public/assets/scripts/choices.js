@@ -1,4 +1,4 @@
-/*! choices.js v10.2.0 | © 2022 Josh Johnson | https://github.com/jshjohnson/Choices#readme */
+/*! choices.js v10.2.0 | © 2024 Josh Johnson | https://github.com/jshjohnson/Choices#readme */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -1187,8 +1187,11 @@ var Choices = /** @class */function () {
     var needle = newValue;
     var options = Object.assign(this.config.fuseOptions, {
       keys: __spreadArray([], this.config.searchFields, true),
-      includeMatches: true
+      includeMatches: true,
+      threshold: 0,
+      ignoreLocation: true
     });
+    console.log('keys', this.config.searchFields);
     var fuse = new fuse_js_1.default(haystack, options);
     var results = fuse.search(needle); // see https://github.com/krisk/Fuse/issues/303
     this._currentValue = newValue;
