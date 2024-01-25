@@ -1,6 +1,6 @@
 {
-  "name": "choices.js",
-  "version": "10.2.0",
+  "name": "@goeg/choices.js",
+  "version": "10.2.2",
   "description": "A vanilla JS customisable text input/select box plugin",
   "main": "./public/assets/scripts/choices.js",
   "types": "./public/types/src/index.d.ts",
@@ -31,9 +31,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jshjohnson/Choices.git"
+    "url": "git+https://github.com/Dude9177/Choices"
   },
-  "author": "Josh Johnson",
+  "author": "René Philipp Heindl; Josh Johnson",
   "license": "MIT",
   "files": [
     "public/assets/scripts",
@@ -43,10 +43,6 @@
     "!src/**/*.test.js",
     "types"
   ],
-  "bugs": {
-    "url": "https://github.com/jshjohnson/Choices/issues"
-  },
-  "homepage": "https://github.com/jshjohnson/Choices#readme",
   "keywords": [
     "customisable",
     "input",
@@ -112,7 +108,7 @@
     "fuse.js": "^6.6.2",
     "redux": "^4.2.0"
   },
-  "npmName": "choices.js",
+  "npmName": "@goeg/choices.js",
   "npmFileMap": [
     {
       "files": [
@@ -140,5 +136,8 @@
       "path": "public/assets/styles/choices.min.css",
       "maxSize": "2.5 kB"
     }
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.goeg.at/"
+  }
 }

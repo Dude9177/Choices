@@ -1,4 +1,4 @@
-/*! choices.js v10.2.0 | © 2024 Josh Johnson | https://github.com/jshjohnson/Choices#readme */
+/*! @goeg/choices.js v10.2.2 | © 2024 René Philipp Heindl; Josh Johnson | undefined */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -1191,7 +1191,6 @@ var Choices = /** @class */function () {
       threshold: 0,
       ignoreLocation: true
     });
-    console.log('keys', this.config.searchFields);
     var fuse = new fuse_js_1.default(haystack, options);
     var results = fuse.search(needle); // see https://github.com/krisk/Fuse/issues/303
     this._currentValue = newValue;

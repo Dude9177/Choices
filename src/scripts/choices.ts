@@ -1336,7 +1336,6 @@ class Choices implements Choices {
       threshold: 0,
       ignoreLocation: true
     }) as Fuse.IFuseOptions<Choice>;
-    console.log('keys', this.config.searchFields)
     const fuse = new Fuse(haystack, options);
     const results: Result<Choice>[] = fuse.search(needle) as any[]; // see https://github.com/krisk/Fuse/issues/303
 
